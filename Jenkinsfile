@@ -1,5 +1,5 @@
 job("Maven_project_using_DSL"){
-	description("Maven Project generated from DSL on ${ new Data()}"
+	description("Maven Project generated from DSL on ${ new Data()}")
 	
 	scm {
 		git("https://github.com/issacrajan/test-memcache", master)
