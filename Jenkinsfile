@@ -14,6 +14,6 @@ job("Maven_project_using_DSL"){
 	}
 	
 	publishers {
-		archieveAtrifacts "**/*.jar"
+		archiveArtifacts("**/*.jar")
 	}
 }
