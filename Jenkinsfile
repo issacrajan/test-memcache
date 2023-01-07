@@ -3,7 +3,7 @@ pipeline{
 	stages {
 		stage("init"){
 			steps{
-				echo "hi this is init step1");
+				echo "hi this is init step1";
 				echo "init step2"
 			}
 		}
