@@ -1,19 +1,23 @@
-job("Maven_project_using_DSL"){
-	description("Maven Project generated from DSL on ${ new Date()}")
-	
-	scm {
-		git("https://github.com/issacrajan/test-memcache.git", "master")
-	}
-	
-	triggers{
-		scm("* * * * *")
-	}	
-	
-	steps {
-		maven("clean -DskipTests=true  package", "pom.xml")
-	}
-	
-	publishers {
-		archiveArtifacts("**/*.jar")
+pipeline{
+	agent any
+	stages {
+		stage("init"){
+			steps{
+				echo "hi this is init step1");
+				echo "init step2"
+			}
+		}
+		
+		stage("build"){
+			steps{
+				echo "build goes here"
+			}
+		}
+		
+		stage("deploy"){
+			steps{
+				echo "deploy goes here"
+			}
+		}
 	}
 }
