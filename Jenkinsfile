@@ -2,7 +2,7 @@ job("Maven_project_using_DSL"){
 	description("Maven Project generated from DSL on ${ new Date()}")
 	
 	scm {
-		git("git@github.com:issacrajan/test-memcache.git", "master")
+		git("https://github.com/issacrajan/test-memcache.git", "master")
 	}
 	
 	triggers{
